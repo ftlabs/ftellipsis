@@ -1,0 +1,37 @@
+{
+  "name": "ellipsis",
+  "title": "Ellipsis",
+  "description": "Multi-line ellipsis made possible",
+  "version": "0.1.0",
+  "homepage": "https://github.com/wilsonpage/ellipsis",
+  "author": {
+    "name": "Wilson Page",
+    "email": "wilsonpage@me.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wilsonpage/ellipsis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wilsonpage/ellipsis/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/wilsonpage/ellipsis/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "grunt qunit"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.17"
+  },
+  "keywords": []
+}

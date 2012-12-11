@@ -1,0 +1,46 @@
+h1 {
+	margin: 0;
+	font-size: inherit;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	text-indent: 1em;
+}
+
+.container {
+	/*width: 956px;*/
+	height: 419px;
+	background-color: #DDD;
+	-webkit-column-count: 3;
+	   -moz-column-count: 2;
+		-ms-column-count: 2;
+			column-count: 2;
+	font-size: 13px;
+	line-height: 25px;
+	position: relative;
+}
+
+.overflowing-child {
+	margin-bottom: 9em;
+	padding: 0 !important;
+	overflow: hidden;
+	position: relative;
+}
+
+.overflowing-child:before {
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 20px;
+	/*background-image: -webkit-linear-gradient(top, rgba(221,221,221,0) 0%,rgba(221,221,221,1) 100%);*/
+	/*background-color: red;*/
+}
+
+/*.overflowing-child:after {
+	content: "...";
+}*/
