@@ -6,7 +6,7 @@ h1 {
 p {
 	margin: 0;
 	padding: 0;
-	text-indent: 1em;
+	padding-bottom: 16px;
 }
 
 p:first-of-type {
@@ -14,7 +14,7 @@ p:first-of-type {
 }
 
 .container {
-	width: 50%;
+	width: 600px;
 	height: 230px;
 	background-color: #DDD;
 	overflow: hidden;
