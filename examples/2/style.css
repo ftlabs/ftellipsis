@@ -33,7 +33,7 @@ p:first-of-type {
 
 .overflowing-child {
 	margin-bottom: 9em;
-	padding: 0 !important;
+	padding: 0;
 	overflow: hidden;
 	position: relative;
 }
