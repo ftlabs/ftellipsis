@@ -1,10 +1,12 @@
-/*! Ellipsis - v0.1.0 - 2012-12-11
+/*! Ellipsis - v0.1.0 - 2012-12-13
 * https://github.com/wilsonpage/ellipsis
 * Copyright (c) 2012 Wilson Page; Licensed MIT */
 
 /*global console*/
 (function(root) {
     'use strict';
+
+    var indexOf = Array.prototype.indexOf;
 
     /**
      * Returns the vendor prifix on runtime.
@@ -154,7 +156,8 @@
     }
 
     /**
-     * Removes all clamping styles from the overflowing child.
+     * Removes all clamping styles from the
+     * overflowing child.
      *
      * @param  {Object} child
      * @return void
@@ -167,6 +170,40 @@
         child.el.style['display'] = '';
         child.el.style['webkitBoxOrient'] = '';
         child.el.classList.remove('overflowing-child');
+    }
+
+    function setFlex(el, value) {
+        el.style[vendor + 'box-flex'] = value;
+        el.style[vendor + 'flex'] = value;
+    }
+
+    function reRender(el) {
+        el.style.display = 'none';
+        setTimeout(function () {
+            el.style.display = '';
+        }, 0);
+    }
+
+    /**
+     * Sets the display property on
+     * all siblingsafter the given element.
+     *
+     * Options:
+     *   - `display` the css display type to use
+     *
+     * @param  {Node} el
+     * @param  {Options} options
+     * @return void
+     */
+
+    function siblingsAfter(el, options) {
+        var display = options && options.display;
+        var siblings = el.parentNode.children;
+        var index = indexOf.call(siblings, el);
+
+        for (var i = index + 1, l = siblings.length; i < l; i++) {
+            siblings[i].style.display = display;
+        }
     }
 
     // Expose Ellipsis
@@ -185,13 +222,14 @@
     }
 
     /**
-     * Measures the element and find the overflowing child.
+     * Measures the element and
+     * finds the overflowing child.
      *
      * @return {Ellipsis}
      */
 
     Ellipsis.prototype.calc = function() {
-        if (Ellipsis.profile) console.profile('ellipsis.calc');
+        if (!this.el) return this;
         var style = getStyle(this.el);
         var size = getSize(this.el);
 
@@ -202,21 +240,24 @@
         this.totalHeight = size[1] * this.columnCount;
 
         this.overflowingChild = getOverflowingChild(this);
-        if (Ellipsis.profile) console.profileEnd('ellipsis.calc');
         return this;
     };
 
     /**
-     * Clamps the overflowing child using the information
-     * acquired from Ellipsis#calc().
+     * Clamps the overflowing child using
+     * the information acquired from Ellipsis#calc().
      *
      * @return {Ellipsis}
      */
 
     Ellipsis.prototype.set = function() {
-        if (Ellipsis.profile) console.profile('ellipsis.set');
+        if (!this.el || !this.overflowingChild) return this;
+
         clampOverflowingChild(this.overflowingChild);
-        if (Ellipsis.profile) console.profileEnd('ellipsis.set');
+        siblingsAfter(this.overflowingChild.el, { display: 'none' });
+        setFlex(this.el, '0');
+        reRender(this.el);
+
         return this;
     };
 
@@ -227,10 +268,13 @@
      */
 
     Ellipsis.prototype.unset = function() {
-        if (Ellipsis.profile) console.profile('ellipsis.unset');
+        if (!this.el || !this.overflowingChild) return this;
+
         unclampOverflowingChild(this.overflowingChild);
+        siblingsAfter(this.overflowingChild.el, { display: '' });
+        setFlex(this.el, '');
         this.overflowingChild = null;
-        if (Ellipsis.profile) console.profileEnd('ellipsis.unset');
+
         return this;
     };
 
