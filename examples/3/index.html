@@ -11,7 +11,7 @@
 		<li>
 			<h4>Test title</h4>
 			<img src="image.jpg"/>
-			<div class="body" id="ellipsis">
+			<div class="body js-ellipsis">
 				<p>Duis malesuada elit vel urna euismod faucibus. Integer urna velit, porta a varius sit amet, luctus quis justo. Suspendisse eget nibh orci. Integer et lorem risus, vel eleifend mi. Nunc porta porttitor purus, eget blandit dolor auctor ut. Vivamus porttitor egestas lorem, in rhoncus sapien tempor rutrum. Nunc at neque nunc, vel tincidunt mi. Pellentesque sit amet erat vitae velit condimentum imperdiet ut quis lorem. Nullam quis lectus et eros congue gravida. Sed at turpis eget nibh dignissim tempus. Cras dapibus lacinia augue, eu viverra metus rhoncus non. Proin at elit quis tellus malesuada pretium. Phasellus orci magna, facilisis ullamcorper accumsan tincidunt, vestibulum in nulla. Ut condimentum tristique purus sed vulputate.
 				</p>
 			</div>
@@ -19,7 +19,7 @@
 		<li>
 			<h4>Test title</h4>
 			<img class="image" src="image.jpg"/>
-			<div class="body">
+			<div class="body js-ellipsis">
 				<p>Duis malesuada elit vel urna euismod faucibus. Integer urna velit, porta a varius sit amet, luctus quis justo. Suspendisse eget nibh orci. Integer et lorem risus, vel eleifend mi. Nunc porta porttitor purus, eget blandit dolor auctor ut. Vivamus porttitor egestas lorem, in rhoncus sapien tempor rutrum. Nunc at neque nunc, vel tincidunt mi. Pellentesque sit amet erat vitae velit condimentum imperdiet ut quis lorem. Nullam quis lectus et eros congue gravida. Sed at turpis eget nibh dignissim tempus. Cras dapibus lacinia augue, eu viverra metus rhoncus non. Proin at elit quis tellus malesuada pretium. Phasellus orci magna, facilisis ullamcorper accumsan tincidunt, vestibulum in nulla. Ut condimentum tristique purus sed vulputate.
 				</p>
 			</div>
@@ -27,18 +27,30 @@
 		<li>
 			<h4>Test title</h4>
 			<img src="image.jpg"/>
-			<div class="body">
+			<div class="body js-ellipsis">
 				<p>Duis malesuada elit vel urna euismod faucibus. Integer urna velit, porta a varius sit amet, luctus quis justo. Suspendisse eget nibh orci. Integer et lorem risus, vel eleifend mi. Nunc porta porttitor purus, eget blandit dolor auctor ut. Vivamus porttitor egestas lorem, in rhoncus sapien tempor rutrum. Nunc at neque nunc, vel tincidunt mi. Pellentesque sit amet erat vitae velit condimentum imperdiet ut quis lorem. Nullam quis lectus et eros congue gravida. Sed at turpis eget nibh dignissim tempus. Cras dapibus lacinia augue, eu viverra metus rhoncus non. Proin at elit quis tellus malesuada pretium. Phasellus orci magna, facilisis ullamcorper accumsan tincidunt, vestibulum in nulla. Ut condimentum tristique purus sed vulputate.
 				</p>
 			</div>
 		</li>
 	</ul>
 	<script>
-
+		var ellips = [];
 		window.addEventListener('load', function() {
-			var el = document.getElementById('ellipsis');
+			var ellip;
+			var els = document.getElementsByClassName('js-ellipsis');
+
 			console.time('ellipsis');
-			var ellipsis = new Ellipsis(el).calc().set();
+
+			for (var i = 0, l = els.length; i < l; i++) {
+				ellip = new Ellipsis(els[i]);
+				ellip.calc();
+				ellips.push(ellip);
+			}
+
+			for (var i = 0, l = ellips.length; i < l; i++) {
+				ellips[i].set();
+			}
+
 			console.timeEnd('ellipsis');
 		});
 
