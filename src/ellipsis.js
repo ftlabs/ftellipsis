@@ -1,23 +1,34 @@
-/*jshint node:true*/
 
-'use strict';
+;(function() {
 
-(function() {
+  'use strict';
 
-  // Alias some methods
+  /**
+   * Aliases
+   */
+
   var indexOf = Array.prototype.indexOf;
   var getStyle = window.getComputedStyle;
 
-  // Classes
+  /**
+   * CSS Classes
+   */
+
   var overflowingChildClass = 'ellipsis-overflowing-child';
   var containerClass = 'ellipsis-set';
 
-  // Error messages
+  /**
+   * Error Messages
+   */
+
   var errors = [
     'The ellipsis container must have line-height set on it'
   ];
 
-  // Data about current vendor
+  /**
+   * Vendor Info
+   */
+
   var vendor = getVendorData();
 
   /**
