@@ -1,5 +1,5 @@
 
-;(function() {
+;(function(){
 
   'use strict';
 
@@ -526,4 +526,4 @@
     window.Ellipsis = Ellipsis;
   }
 
-}());
+})();
