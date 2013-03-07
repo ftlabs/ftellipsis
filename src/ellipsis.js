@@ -451,8 +451,8 @@
   }
 
   /**
-   * Gets the column count of an element
-   * using the vendor prefix.
+   * Gets the column count of an
+   * element using the vendor prefix.
    *
    * @param  {CSSStyleDeclaration} style  [description]
    * @return {Number}
@@ -474,7 +474,8 @@
   }
 
   /**
-   * Gets the line height from the style declaration.
+   * Gets the line height
+   * from the style declaration.
    *
    * @param  {CSSStyleDeclaration} style
    * @return {Number|null}
@@ -488,8 +489,8 @@
   }
 
   /**
-   * Returns the width and height of the
-   * given element.
+   * Returns the width and
+   * height of the given element.
    *
    * @param  {Element} el
    * @return {Array}
