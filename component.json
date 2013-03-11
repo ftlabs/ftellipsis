@@ -9,7 +9,6 @@
     "url": "git://github.com/wilsonpage/ellipsis.git"
   },
   "ignore": [
-  	"examples/",
-  	"test/"
+  	"examples/"
   ]
 }
