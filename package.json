@@ -4,6 +4,7 @@
   "description": "Multi-line ellipsis made possible",
   "version": "0.1.0",
   "homepage": "https://github.com/wilsonpage/ellipsis",
+  "main": "lib/ellipsis.js",
   "author": {
     "name": "Wilson Page",
     "email": "wilsonpage@me.com"

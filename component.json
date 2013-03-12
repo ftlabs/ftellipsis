@@ -1,9 +1,7 @@
 {
   "name": "ellipsis",
   "version": "0.1.0",
-  "main": [
-    "lib/ellipsis.js"
-  ],
+  "main": "lib/ellipsis.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/wilsonpage/ellipsis.git"
