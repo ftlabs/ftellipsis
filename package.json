@@ -2,7 +2,7 @@
   "name": "ellipsis",
   "title": "Ellipsis",
   "description": "Multi-line ellipsis made possible",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "homepage": "https://github.com/wilsonpage/ellipsis",
   "main": "lib/ellipsis.js",
   "author": {
