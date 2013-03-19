@@ -1,6 +1,6 @@
 {
   "name": "ellipsis",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": "lib/ellipsis.js",
   "repository": {
     "type": "git",
