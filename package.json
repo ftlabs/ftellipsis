@@ -9,30 +9,25 @@
     "name": "Wilson Page",
     "email": "wilsonpage@me.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/wilsonpage/ellipsis.git"
-  },
-  "bugs": {
-    "url": "https://github.com/wilsonpage/ellipsis/issues"
-  },
   "licenses": [
     {
       "type": "MIT",
       "url": "https://github.com/wilsonpage/ellipsis/blob/master/LICENSE-MIT"
     }
   ],
-  "dependencies": {
-    "jquery": "*"
-  },
-  "engines": {
-    "node": ">= 0.6.0"
-  },
-  "scripts": {
-    "test": "grunt qunit"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "grunt": "~0.3.17"
+    "grunt": "*",
+    "grunt-readme": "git://github.com/wilsonpage/grunt-readme.git",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "buster": "~0.6.12",
+    "superagent": "~0.14.1"
   },
-  "keywords": []
+  "keywords": [],
+  "scripts": {
+    "pretest": "./scripts/start-server.sh",
+    "test": "./node_modules/buster/bin/buster-test --reporter dots",
+    "posttest": "./scripts/kill-servers.sh phantom && ./scripts/kill-servers.sh buster-server"
+  }
 }

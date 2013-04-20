@@ -1,0 +1,37 @@
+
+.container {
+	position: relative;
+	width: 400px;
+	height: 190px;
+	font-size: 13px;
+	line-height: 20px;
+	font-family: arial;
+}
+
+.container p {
+	margin: 0;
+	text-indent: 1em;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.container-1 {
+	-webkit-column-count: 1;
+	   -moz-column-count: 1;
+		  -ms-column-count: 1;
+			    column-count: 1;
+}
+
+.container-2 {
+	-webkit-column-count: 2;
+	   -moz-column-count: 2;
+		  -ms-column-count: 2;
+			    column-count: 2;
+}
+
+.container-3 {
+	-webkit-column-count: 3;
+	   -moz-column-count: 3;
+		  -ms-column-count: 3;
+			    column-count: 3;
+}
