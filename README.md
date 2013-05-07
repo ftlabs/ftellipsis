@@ -55,8 +55,9 @@ Initialize a new Ellipsis
 instance with the given element.
 
 Options:
-    - `container` A parent container element
-    - `reRender` Forces a redraw after ellipsis applied
+
+ - `container` A parent container element
+ - `reRender` Forces a redraw after ellipsis applied
 
 ### Ellipsis#calc();
 
