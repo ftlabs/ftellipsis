@@ -26,8 +26,6 @@
   },
   "keywords": [],
   "scripts": {
-    "pretest": "./scripts/start-server.sh",
-    "test": "./node_modules/buster/bin/buster-test --reporter dots",
-    "posttest": "./scripts/kill-servers.sh phantom && ./scripts/kill-servers.sh buster-server"
+    "test": "grunt buster"
   }
 }
