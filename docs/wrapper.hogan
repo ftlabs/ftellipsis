@@ -9,10 +9,35 @@ Download the [production version][min] or the [development version][max].
 [max]: https://raw.github.com/wilsonpage/ellipsis/master/dist/ellipsis.js
 
 ## Usage
-_(Coming soon)_
+
+```js
+var element = document.getElementById('my-element');
+var ellipsis = new Ellipsis(element);
+
+ellipsis.calc();
+ellipsis.set();
+```
+
+Requirements:
+
+- The element must have a fixed height so that content overflows.
+- The element must have child elements (eg. `<p>`s).
+
+#### Unsetting
+
+Unsetting an ellipsis instance removes any styling.
+
+```js
+ellipsis.unset();
+```
+
+#### Destroying
+
+Destroying an ellipsis instance resets the instance back to it's original state, unsetting and internal variables and state.
+
+```js
+ellipsis.unset();
+```
 
 ## API
 {{{ellipsis}}}
-
-## Release History
-_(Nothing yet)_
