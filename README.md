@@ -41,6 +41,13 @@ Destroying an ellipsis instance resets the instance back to it's original state,
 ellipsis.unset();
 ```
 
+## Tests
+
+```
+$ npm install
+$ npm test
+```
+
 ## API
 ### Ellipsis();
 
