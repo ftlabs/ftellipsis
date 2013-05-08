@@ -1,7 +1,7 @@
 {
-  "name": "ellipsis",
+  "name": "ftellipsis",
   "version": "0.1.10",
-  "main": "lib/ellipsis.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/wilsonpage/ellipsis.git"
