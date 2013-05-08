@@ -102,7 +102,7 @@ Clears any references
 
 ## Author
 
-- **Wilson Page** - [@](http://github.com/)
+- **Wilson Page** - [@wilsonpage](http://github.com/wilsonpage)
 
 ## License
 Copyright (c) 2012 The Finanacial Times Limited
