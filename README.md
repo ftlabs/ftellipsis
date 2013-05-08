@@ -6,21 +6,19 @@ Results are best in webkit browsers due to the availability of [webkit-line-clam
 
 ## Getting Started
 
-#### NPM
+##### NPM
 
 ```
 $ npm install ellipsis
 ```
 
-#### Bower
+##### Bower
 
 ```
 $ bower install ellipsis
 ```
 
-#### Simple
-
-Download the [production version][min] or the [development version][max].
+or download the [production version][min] or the [development version][max].
 
 [min]: https://raw.github.com/wilsonpage/ellipsis/master/dist/ellipsis.min.js
 [max]: https://raw.github.com/wilsonpage/ellipsis/master/dist/ellipsis.js
