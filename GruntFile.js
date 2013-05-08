@@ -11,7 +11,7 @@ module.exports = function(grunt) {
       },
       dist: {
         src: [
-          'lib/ellipsis.js'
+          'lib/index.js'
         ],
         dest: 'README.md'
       }

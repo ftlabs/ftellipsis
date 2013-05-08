@@ -62,6 +62,42 @@ $ npm test
 ```
 
 ## API
+### Ellipsis();
+
+Initialize a new Ellipsis
+instance with the given element.
+
+Options:
+
+ - `container` A parent container element
+ - `reRender` Forces a redraw after ellipsis applied
+
+### Ellipsis#calc();
+
+Measures the element and
+finds the overflowing child.
+
+
+
+### Ellipsis#set();
+
+Clamps the overflowing child using
+the information acquired from #calc().
+
+
+
+### Ellipsis#unset();
+
+Unclamps the overflowing child.
+
+
+
+### Ellipsis#destroy();
+
+Clears any references
+
+
+
 
 
 ## Credits and collaboration
