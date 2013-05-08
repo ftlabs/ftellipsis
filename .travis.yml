@@ -1,10 +1,7 @@
 script:
-  - "grunt buster"
+  - "npm test"
 
 language: node_js
 
 node_js:
   - 0.8.x
-
-before_script:
-  - npm install -g grunt-cli
