@@ -1,4 +1,4 @@
-# Ellipsis
+# FTEllipsis
 
 Solves the problem of applying ellipsis (...) on a multi-line block of text at the point it overflows its container. Ellipsis will work in conjuction with CSS [column-count](https://developer.mozilla.org/en-US/docs/CSS/column-count) if you wish.
 
