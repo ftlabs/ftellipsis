@@ -25,6 +25,11 @@ or download the [production version][min] or the [development version][max].
 [min]: https://raw.github.com/wilsonpage/ellipsis/master/dist/ellipsis.min.js
 [max]: https://raw.github.com/wilsonpage/ellipsis/master/dist/ellipsis.js
 
+## Examples
+
+- [Primary](http://ftlabs.github.io/ftellipsis/examples/1/)
+- [Single Line](http://ftlabs.github.io/ftellipsis/examples/single-line/)
+
 ## Usage
 
 ```js
