@@ -25,7 +25,8 @@
     "grunt-contrib-watch": "~0.3.1",
     "buster": "~0.6.12",
     "superagent": "~0.14.1",
-    "grunt-buster": "~0.1.2"
+    "grunt-buster": "~0.1.2",
+    "grunt-cli": "~0.1.8"
   },
   "keywords": [
     "ellipsis",
@@ -33,6 +34,6 @@
     "layout"
   ],
   "scripts": {
-    "test": "grunt buster"
+    "test": "./node_modules/.bin/grunt buster"
   }
 }
