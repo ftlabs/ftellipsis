@@ -4,9 +4,10 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/wilsonpage/ellipsis.git"
+    "url": "git://github.com/ftlabs/ftellipsis.git"
   },
   "ignore": [
-  	"examples/"
+  	"examples/",
+    "test/"
   ]
 }
