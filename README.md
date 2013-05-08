@@ -98,3 +98,12 @@ Clears any references
 
 
 
+
+
+## Author
+
+- **Wilson Page** - [@](http://github.com/)
+
+## License
+Copyright (c) 2012 The Finanacial Times Limited
+Licensed under the MIT license.

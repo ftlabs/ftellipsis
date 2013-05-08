@@ -63,3 +63,13 @@ $ npm test
 
 ## API
 {{{ellipsis}}}
+
+## Author
+
+{{#pkg.author}}
+- **{{name}}** - [@{{github}}](http://github.com/{{github}})
+{{/pkg.author}}
+
+## License
+Copyright (c) 2012 {{pkg.author.organization}}
+Licensed under the MIT license.
