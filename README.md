@@ -6,13 +6,19 @@ Results are best in webkit browsers due to the availability of [webkit-line-clam
 
 ## Getting Started
 
+#### NPM
+
 ```
 $ npm install ellipsis
 ```
 
+#### Bower
+
 ```
 $ bower install ellipsis
 ```
+
+#### Simple
 
 Download the [production version][min] or the [development version][max].
 
