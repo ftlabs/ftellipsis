@@ -38,7 +38,7 @@ Requirements:
 - The element must have a fixed height so that content overflows.
 - The element must have child elements (eg. `<p>`s).
 
-#### Unsetting
+### Unsetting
 
 Unsetting an ellipsis instance removes any styling.
 
@@ -46,7 +46,7 @@ Unsetting an ellipsis instance removes any styling.
 ellipsis.unset();
 ```
 
-#### Destroying
+### Destroying
 
 Destroying an ellipsis instance resets the instance back to it's original state, unsetting and internal variables and state.
 
@@ -100,10 +100,6 @@ Clears any references
 
 
 
-## Author
+## Credits and collaboration
 
-- **Wilson Page** - [@wilsonpage](http://github.com/wilsonpage)
-
-## License
-Copyright (c) 2012 The Finanacial Times Limited
-Licensed under the MIT license.
+The lead developer of Ellipsis is [Wilson Page](http://github.com/wilsonpage) at FT Labs. All open source code released by FT Labs is licenced under the MIT licence. We welcome comments, feedback and suggestions. Please feel free to raise an issue or pull request. Enjoy.
