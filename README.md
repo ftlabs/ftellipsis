@@ -1,6 +1,6 @@
 # FTEllipsis
 
-Solves the problem of applying ellipsis (...) on a multi-line block of text at the point it overflows its container. Ellipsis will work in conjuction with CSS [column-count](https://developer.mozilla.org/en-US/docs/CSS/column-count) if you wish.
+Solves the problem of applying ellipsis (&hellip;) on a multi-line block of text at the point it overflows its container. Ellipsis will work in conjuction with CSS [column-count](https://developer.mozilla.org/en-US/docs/CSS/column-count) if you wish.
 
 Results are best in webkit browsers due to the availability of [webkit-line-clamp](http://dropshado.ws/post/1015351370/webkit-line-clamp). For non-webkit browsers Ellipsis falls back to clamping text and positioning an element over the end of the overflowing line, allowing the developer to style this however they wish.
 
