@@ -5,6 +5,15 @@ Solves the problem of applying ellipsis (...) on a multi-line block of text at t
 Results are best in webkit browsers due to the availability of [webkit-line-clamp](http://dropshado.ws/post/1015351370/webkit-line-clamp). For non-webkit browsers Ellipsis falls back to clamping text and positioning an element over the end of the overflowing line, allowing the developer to style this however they wish.
 
 ## Getting Started
+
+```
+$ npm install ellipsis
+```
+
+```
+$ bower install ellipsis
+```
+
 Download the [production version][min] or the [development version][max].
 
 [min]: https://raw.github.com/wilsonpage/ellipsis/master/dist/ellipsis.min.js
