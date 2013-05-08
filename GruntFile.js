@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 
     uglify: {
       build: {
-        src: 'lib/<%= pkg.name %>.js',
+        src: 'lib/index.js',
         dest: 'build/<%= pkg.name %>.min.js'
       }
     }
