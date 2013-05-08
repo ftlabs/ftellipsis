@@ -2,20 +2,20 @@
 
 Solves the problem of applying ellipsis (&hellip;) on a multi-line block of text at the point it overflows its container. Ellipsis will work in conjuction with CSS [column-count](https://developer.mozilla.org/en-US/docs/CSS/column-count) if you wish.
 
-Results are best in webkit browsers due to the availability of [webkit-line-clamp](http://dropshado.ws/post/1015351370/webkit-line-clamp). For non-webkit browsers Ellipsis falls back to clamping text and positioning an element over the end of the overflowing line, allowing the developer to style this however they wish.
+Results are best in webkit browsers due to the availability of [webkit-line-clamp](http://dropshado.ws/post/1015351370/webkit-line-clamp). For non-webkit browsers FTEllipsis falls back to clamping text and positioning an element over the end of the overflowing line, allowing the developer to style this however they wish.
 
 ## Getting Started
 
 ##### NPM
 
 ```
-$ npm install ellipsis
+$ npm install ftellipsis
 ```
 
 ##### Bower
 
 ```
-$ bower install ellipsis
+$ bower install ftellipsis
 ```
 
 or download the [production version][min] or the [development version][max].
@@ -48,7 +48,7 @@ ellipsis.unset();
 
 ### Destroying
 
-Destroying an ellipsis instance resets the instance back to it's original state, unsetting and internal variables and state.
+Destroying an ellipsis instance resets the instance back to it's original state, unsetting internal variables and state.
 
 ```js
 ellipsis.unset();
