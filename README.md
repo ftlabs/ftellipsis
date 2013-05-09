@@ -22,7 +22,7 @@ $ bower install ftellipsis
 
 or download the [production version][min] or the [development version][max].
 
-[min]: https://raw.github.com/ftlabs/ftellipsis/master/build/ellipsis.min.js
+[min]: https://raw.github.com/ftlabs/ftellipsis/master/build/ftellipsis.min.js
 [max]: https://raw.github.com/ftlabs/ftellipsis/master/lib/index.js
 
 ## Examples
