@@ -4,7 +4,7 @@ Solves the problem of applying ellipsis (&hellip;) on a multi-line block of text
 
 Results are best in webkit browsers due to the availability of [webkit-line-clamp](http://dropshado.ws/post/1015351370/webkit-line-clamp). For non-webkit browsers FTEllipsis falls back to clamping text and positioning an element over the end of the overflowing line, allowing the developer to style this however they wish.
 
-[![Build Status](https://travis-ci.org/wilsonpage/event.png?branch=master)](https://travis-ci.org/ftlabs/ftellipsis)
+[![Build Status](https://travis-ci.org/ftlabs/ftellipsis.png?branch=master)](https://travis-ci.org/ftlabs/ftellipsis)
 
 ## Getting Started
 
@@ -22,8 +22,8 @@ $ bower install ftellipsis
 
 or download the [production version][min] or the [development version][max].
 
-[min]: https://raw.github.com/wilsonpage/ellipsis/master/build/ellipsis.min.js
-[max]: https://raw.github.com/wilsonpage/ellipsis/master/lib/index.js
+[min]: https://raw.github.com/ftlabs/ftellipsis/master/build/ellipsis.min.js
+[max]: https://raw.github.com/ftlabs/ftellipsis/master/lib/index.js
 
 ## Examples
 
