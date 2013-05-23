@@ -11,7 +11,7 @@ config["My tests"] = {
     rootPath: "../",
     autoRun: false,
     sources: [
-      "node_modules/superagent/build/build.js",
+      "node_modules/superagent/superagent.js",
       "test/helpers.js",
       "lib/*.js"      // Glob patterns supported
     ],
