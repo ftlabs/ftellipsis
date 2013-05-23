@@ -34,6 +34,6 @@
     "layout"
   ],
   "scripts": {
-    "test": "./node_modules/.bin/grunt buster"
+    "test": "./node_modules/.bin/grunt buster -v"
   }
 }
