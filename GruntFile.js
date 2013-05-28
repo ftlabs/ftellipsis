@@ -5,18 +5,15 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     readme: {
-      options: {
-        comment: 'docs/item.hogan',
-        readme: 'docs/wrapper.hogan'
-      },
-      dist: {
-        src: [
-          'lib/index.js'
+      build: {
+        code: [
+          { path: 'lib/index.js' }
         ],
-        dest: 'README.md'
+        output: {
+          'docs/readme.hogan': 'README.md'
+        }
       }
     },
-
     uglify: {
       build: {
         src: 'lib/index.js',

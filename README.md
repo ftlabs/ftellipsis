@@ -56,7 +56,7 @@ ellipsis.unset();
 Destroying an ellipsis instance resets the instance back to it's original state, unsetting internal variables and state.
 
 ```js
-ellipsis.destroy();
+ellipsis.unset();
 ```
 
 ## Tests
@@ -67,6 +67,7 @@ $ npm test
 ```
 
 ## API
+
 ### Ellipsis();
 
 Initialize a new Ellipsis
@@ -100,7 +101,6 @@ Unclamps the overflowing child.
 ### Ellipsis#destroy();
 
 Clears any references
-
 
 
 

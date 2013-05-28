@@ -1,7 +1,0 @@
-{{#items}}
-### {{#ctx.cons}}{{ctx.cons}}#{{/ctx.cons}}{{ctx.name}}();
-
-{{{description.summary}}}
-
-{{{description.body}}}
-{{/items}}
