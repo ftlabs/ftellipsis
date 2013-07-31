@@ -13,7 +13,7 @@ h1 {
 }
 
 p {
-	text-indent: 1em;
+	break-before: avoid;
 }
 
 
