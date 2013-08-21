@@ -29,7 +29,7 @@
     "grunt-contrib-watch": "~0.5.1",
     "buster": "~0.6.12",
     "superagent": "0.14.4",
-    "grunt-buster": "~0.2.1",
+    "grunt-buster": "~0.1.2",
     "grunt-cli": "~0.1.8"
   },
   "keywords": [
