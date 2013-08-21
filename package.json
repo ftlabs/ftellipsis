@@ -5,6 +5,10 @@
   "version": "0.2.2",
   "homepage": "https://github.com/ftlabs/ftellipsis",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:ftlabs/ftellipsis.git"
+  },
   "author": {
     "name": "Wilson Page",
     "email": "wilsonpage@me.com",
