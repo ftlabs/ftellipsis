@@ -2,7 +2,7 @@
   "name": "ftellipsis",
   "title": "FTEllipsis",
   "description": "Multi-line ellipsis made possible",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "homepage": "https://github.com/ftlabs/ftellipsis",
   "main": "lib/index.js",
   "repository": {
