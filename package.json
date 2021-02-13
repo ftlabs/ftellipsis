@@ -28,7 +28,7 @@
     "grunt-contrib-uglify": "~0.2.0",
     "grunt-contrib-watch": "~0.5.1",
     "buster": "~0.6.12",
-    "superagent": "0.14.4",
+    "superagent": "5.1.0",
     "grunt-buster": "~0.1.2",
     "grunt-cli": "~0.1.8"
   },
