@@ -1,6 +1,9 @@
 var helpers = {};
 var request = superagent;
 
+var assert = buster.referee.assert;
+var refute = buster.referee.refute;
+
 helpers.fixture = function(name, callback) {
 	request.get(name, function(res) {
 		callback(res.text);
